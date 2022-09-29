@@ -1,0 +1,47 @@
+
+body { 
+    background: #121212 !important; 
+    
+}
+body h1 {
+    color: aliceblue;
+    
+}
+.card { 
+    
+   
+}
+.circle {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(#b0e633, #53ef7d);
+    border-radius: 50%;
+    position: absolute;
+    animation: move-up6 2s ease-in infinite alternate-reverse;
+  }
+
+
+
+.circle:nth-child(1) {
+    top: 25px;
+    left: 25px;
+  }
+  
+  .circle:nth-child(2) {
+    bottom: 25px;
+    right: 25px;
+    animation-name: move-down1;
+  }
+  
+  @keyframes move-up6 {
+    to {
+      transform: translateY(-100px);
+    }
+  }
+  
+  @keyframes move-down1 {
+    to {
+      transform: translateY(50px);
+    }
+  }
+
