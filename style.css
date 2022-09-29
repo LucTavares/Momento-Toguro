@@ -12,36 +12,38 @@ body h1 {
    
 }
 .circle {
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(#b0e633, #53ef7d);
-    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(#1db954fd, #1DB954);
+    border-radius: 100%;
     position: absolute;
-    animation: move-up6 2s ease-in infinite alternate-reverse;
+    animation: move-up6 10s ease-in infinite alternate-reverse;
   }
 
 
 
 .circle:nth-child(1) {
-    top: 25px;
-    left: 25px;
+    top: 50px;
+    left: 50px;
   }
   
   .circle:nth-child(2) {
-    bottom: 25px;
-    right: 25px;
+    bottom: 50px;
+    right: 50px;
     animation-name: move-down1;
   }
   
   @keyframes move-up6 {
     to {
-      transform: translateY(-100px);
+      
+      opacity: 100%; 
+      transform: translateY(-200px);
     }
   }
   
   @keyframes move-down1 {
     to {
-      transform: translateY(50px);
+      transform: skewx(1deg) translatex(-150px);
     }
   }
 
